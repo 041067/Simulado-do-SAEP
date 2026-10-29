@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões SAEP de Eletroeletrônica, IoT & Lógica de Programação</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- MathJax CDN para renderização de equações LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        pre, code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @media (max-width: 640px) {
+            .question-card {
+                padding: 1rem;
+            }
+            .option-label {
+                padding: 0.5rem;
+            }
+            .feedback {
+                font-size: 0.875rem;
+            }
+            .question-card h2 {
+                font-size: 1.125rem;
+            }
+            .question-card p {
+                font-size: 0.875rem;
+            }
+            .feedback p {
+                font-size: 0.875rem;
+            }
+            .option-label span {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-4xl mx-auto space-y-8">
+        
+        <!-- Header -->
+        <header class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="border-b border-slate-100 pb-4 mb-4">
+                <span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-2">
+                    Tecnologia da Informação • Software
+                </span>
+                <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">
+                    Questões SAEP de Eletroeletrônica, IoT & Lógica de Programação
+                </h1>
+                <p class="text-slate-500 text-sm mt-1">
+                    Total de Questões: 25
+                </p>
+            </div>
+        </header>
+
+        <!-- Form / Questions List -->
+        <form id="quiz-form" class="space-y-6">
+
+            <!-- MÓDULO I: ELETROELETRÔNICA APLICADA -->
+            <div class="bg-indigo-900 text-white p-4 rounded-xl shadow-sm">
+                <h2 class="text-lg font-bold">Módulo I: Fundamentos de Eletroeletrônica Aplicada (Questões 01 a 10)</h2>
+            </div>
+
+            <!-- QUESTÃO 1 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="1" data-correct="d">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 01</span>
+                    <span class="text-xs text-slate-400 font-medium">Magnetismo e Eletromagnetismo</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um profissional de TI atua no diagnóstico de hardware em um <i>datacenter</i>. Ao analisar a placa de alimentação de um servidor de processamento de dados, ele observa um fenômeno de indução magnética no núcleo de um transformador de pulso de alta frequência, que opera sob sinal senoidal de \(60\text{ Hz}\). O técnico necessita calcular a força eletromotriz induzida (\(\mathcal{E}\)) no enrolamento secundário do componente, sabendo que o fluxo magnético varia no tempo segundo a função \(\Phi(t) = 0{,}02 \cdot \cos(100\pi t)\text{ Wb}\) e o secundário é constituído por \(150\) espiras.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine a amplitude máxima da força eletromotriz induzida no enrolamento secundário deste transformador.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(3{,}00\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(9{,}42\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(300{,}00\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(942{,}48\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q1" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(1500{,}00\text{ V}\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 2 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="2" data-correct="a">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 02</span>
+                    <span class="text-xs text-slate-400 font-medium">Carga Elétrica</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Durante a manutenção preventiva de um módulo de memória RAM com proteção contra descargas eletrostáticas (ESD), um analista de suporte técnico estuda o acúmulo de carga em um capacitor interno da linha de desacoplamento de \(100\text{ nF}\). O componente é carregado por uma fonte constante até acumular uma carga total de \(1{,}2\text{ }\mu\text{C}\). O técnico precisa determinar a energia potencial elétrica armazenada no capacitor para dimensionar a resistência de sangria adequada.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Calcule o valor da energia potencial elétrica armazenada no capacitor do circuito de desacoplamento.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(7{,}20\text{ }\mu\text{J}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(14{,}40\text{ }\mu\text{J}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(12{,}00\text{ mJ}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(144{,}00\text{ mJ}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q2" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(720{,}00\text{ mJ}\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 3 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="3" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 03</span>
+                    <span class="text-xs text-slate-400 font-medium">Dispositivos de Proteção Elétrica</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Em um bastidor (<i>rack</i>) de servidores corporativos alimentado em \(220\text{ V}_{\text{RMS}}\), a equipe de infraestrutura instalou um Varistor de Óxido Metálico (MOV) como dispositivo de proteção contra transientes de tensão causados por surtos na rede. Durante um evento de surto elétrico na rede, a tensão pico sobre o dispositivo ultrapassa o limiar nominal de disparo, alterando drasticamente o regime de condução do componente de proteção.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Identifique o comportamento físico exibido pelo Varistor de Óxido Metálico ao atingir a tensão de disparo durante o surto elétrico.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Elevação drástica de sua resistência elétrica interna, atuando como um circuito aberto para isolar a carga.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Redução acentuada de sua resistência elétrica interna, desviando a corrente excedente para o sistema de aterramento.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Fusão de seu elemento metálico interno por efeito Joule, interrompendo permanentemente o fluxo de corrente.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Armazenamento do excesso de carga eletrostática em suas placas internas para posterior dissipação lenta.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q3" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Indução de uma força contraeletromotriz que anula a variação de tensão por meio de um campo magnético.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 4 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="4" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 04</span>
+                    <span class="text-xs text-slate-400 font-medium">Multímetro</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um desenvolvedor de firmware realiza testes em uma bancada de validação de <i>hardware</i> para um dispositivo de Internet das Coisas (IoT). Para medir a corrente de repouso (<i>sleep current</i>) do microcontrolador, ele conecta um multímetro digital em série com o circuito alimentado por uma fonte de \(5\text{ V}\). Contudo, por equívoco na seleção de escala e configuração interna do instrumento, o circuito integrado do microcontrolador para de operar imediatamente devido à queda de tensão excessiva gerada pelo próprio medidor.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine a causa técnica que provocou o desligamento do circuito durante a inserção do multímetro.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Seleção da escala de amperímetro com shunt de altíssima impedância, provocando uma queda de tensão excessiva em série com a carga.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Seleção da função de voltímetro com altíssima impedância interna conectado em série, limitando a corrente de operação do circuito a níveis ínfimos.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Conexão do instrumento na função de amperímetro em paralelo com a fonte, provocando um curto-circuito na alimentação.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Ativação da escala de teste de diodos, a qual injeta uma tensão de polarização reversa que danificou o circuito integrado.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q4" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Conexão das pontas de prova na escala de ohmímetro, provocando o disparo de corrente de pico injetada pela bateria interna do multímetro.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 5 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="5" data-correct="c">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 05</span>
+                    <span class="text-xs text-slate-400 font-medium">Eletrônica Analógica</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um engenheiro de sistemas embarcados está projetando o estágio de condicionamento de sinal analógico proveniente de um sensor de temperatura para a entrada conversora de uma placa de aquisição de dados. O circuito utiliza um amplificador operacional ideal configurado como amplificador não inversor, com um resistor de realimentação \(R_f = 47\text{ k}\Omega\) e um resistor ligado à massa \(R_1 = 3\text{ k}\Omega\). O sensor entrega um sinal de amplitude \(100\text{ mV}\).
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Calcule o valor da tensão de saída entregue à placa de aquisição de dados.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(1{,}47\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(1{,}57\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(1{,}67\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(15{,}67\text{ V}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q5" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(16{,}67\text{ V}\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 6 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="6" data-correct="a">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 06</span>
+                    <span class="text-xs text-slate-400 font-medium">Eletrônica Digital</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Durante o desenvolvimento do circuito lógico de seleção de memória em um sistema computacional, um técnico precisa simplificar a expressão booleana do canal de habilitação (<i>Enable</i>) para otimizar o uso de portas lógicas em um chip de lógica programável. A função lógica original mapeada a partir do projeto é dada por:
+                    <div class="text-center my-2">\(F(A, B, C) = \bar{A}\bar{B}C + \bar{A}BC + AB\bar{C} + ABC\)</div>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine a expressão lógica simplificada equivalente para a função de habilitação do circuito.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(F = \bar{A}C + AB\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(F = \bar{A}B + AC\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(F = A\bar{B} + BC\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(F = \bar{B}C + A\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q6" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(F = C + AB\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 7 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="7" data-correct="d">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 07</span>
+                    <span class="text-xs text-slate-400 font-medium">Conceitos de Eletricidade & Lei de Ohm</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um barramento de alimentação de \(12\text{ V}_{\text{DC}}\) em uma placa de rede industrial alimenta três módulos de processamento conectados em paralelo. O módulo 1 consome \(6\text{ W}\), o módulo 2 possui uma resistência equivalente de \(24\text{ }\Omega\) e o módulo 3 absorve uma corrente de \(1{,}5\text{ A}\). O analista de infraestrutura precisa dimensionar a corrente total fornecida pela fonte para garantir que a linha de alimentação suporte a demanda máxima.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Calcule a corrente total exigida pelos três módulos de processamento sob a fonte de \(12\text{ V}_{\text{DC}}\).
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(1{,}0\text{ A}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(1{,}5\text{ A}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(2{,}5\text{ A}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(3{,}0\text{ A}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q7" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(5{,}5\text{ A}\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 8 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="8" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 08</span>
+                    <span class="text-xs text-slate-400 font-medium">Riscos Elétricos</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um técnico de TI realiza a substituição de um cabo de alimentação de um servidor sob tensão em um ambiente hospitalar. Por falta de atenção, ele estabelece contato elétrico entre a fase condutora de \(220\text{ V}_{\text{RMS}}\) e sua mão, enquanto seus pés estão em contato direto com o piso aterrado. A resistência elétrica total do corpo humano no trajeto percorrido é estimada em \(2200\text{ }\Omega\).
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine a intensidade da corrente elétrica que atravessa o corpo do profissional e o choque elétrico associado a esse valor.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(10\text{ mA}\), nível abaixo do limiar de percepção humana sem efeitos fisiológicos.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(100\text{ mA}\), nível suficiente para causar fibrilação ventricular e parada cardíaca.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(1000\text{ mA}\), nível limitado que causa apenas queimaduras superficiais na pele.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(10\text{ A}\), nível típico de operação que ativa instantaneamente o disjuntor termomagnético geral.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q8" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(22\text{ A}\), nível que provoca a imediata vaporização dos tecidos moles sem afetar o ritmo cardíaco.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 9 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="9" data-correct="c">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 09</span>
+                    <span class="text-xs text-slate-400 font-medium">Aterramento Elétrico</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um projeto de cabeamento estruturado e centro de processamento de dados exige a medição da resistência de aterramento das hastes de cobre fincadas no solo para garantir a dissipação adequada de correntes de surto. O especialista em infraestrutura utiliza um terrômetro de alta precisão com quatro hastes alinhadas sequencialmente a distâncias iguais \(a = 2\text{ metros}\) pelo método de Wenner. Durante o ensaio, o instrumento injeta uma corrente e indica uma resistência lida de \(R = 5\text{ }\Omega\).
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Calcule a resistividade aparente do solo (\(\rho\)) obtida por meio dessa medição.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(10{,}00\text{ }\Omega\cdot\text{m}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(31{,}42\text{ }\Omega\cdot\text{m}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(62{,}83\text{ }\Omega\cdot\text{m}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(100{,}00\text{ }\Omega\cdot\text{m}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q9" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(314{,}16\text{ }\Omega\cdot\text{m}\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 10 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="10" data-correct="a">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 10</span>
+                    <span class="text-xs text-slate-400 font-medium">Eletrônica Analógica & Dispositivos</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Em uma linha de produção automatizada de placas de circuito impresso, um sensor fototransistor opera chaveando uma carga resistiva de \(1\text{ k}\Omega\) alimentada por \(12\text{ V}_{\text{DC}}\). Quando o feixe de luz é interrompido, o transistor passa do estado de corte para a saturação profunda, apresentando uma tensão de saturação entre coletor e emissor \(V_{CE(\text{sat})} = 0{,}2\text{ V}\).
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Calcule a potência dissipada exclusivamente no resistor de carga durante o estado de saturação do transistor.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) \(139{,}24\text{ mW}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) \(144{,}00\text{ mW}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) \(2{,}40\text{ mW}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) \(11{,}80\text{ mW}\)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q10" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) \(140{,}00\text{ mW}\)</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- MÓDULO II: INTERNET DAS COISAS (IoT) -->
+            <div class="bg-indigo-900 text-white p-4 rounded-xl shadow-sm mt-8">
+                <h2 class="text-lg font-bold">Módulo II: Internet das Coisas (Questões 11 a 17)</h2>
+            </div>
+
+            <!-- QUESTÃO 11 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="11" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 11</span>
+                    <span class="text-xs text-slate-400 font-medium">Microcontroladores</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um desenvolvedor de sistemas embarcados programa um microcontrolador da arquitetura ARM Cortex-M para otimizar o consumo de energia em um nó sensor de monitoramento ambiental remoto. O firmware faz o uso extensivo de interrupções de hardware associadas a temporizadores (<i>timers</i>) e pinos GPIO para acordar o núcleo apenas quando eventos específicos ocorrem. Durante o ajuste dos registradores do controlador de interrupção vetorado, o programador analisa a relação entre o tempo de latência de resposta e a preservação de contexto do processador.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Identifique o evento de baixo nível executado automaticamente pelo hardware do microcontrolador imediatamente ao aceitar uma requisição de interrupção.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q11" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Limpeza completa do buffer da memória Flash interna para evitar estouro de pilha durante a rotina.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q11" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Empilhamento (<i>stacking</i>) automático do registrador de status, contador de programa e registradores de uso geral na memória RAM.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q11" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Desativação imediata de todos os barramentos de periféricos para economizar energia durante o atendimento à interrupção.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q11" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Reescrita da tabela de vetores de interrupção diretamente no registrador de instrução do processador.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q11" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Redefinição (<i>reset</i>) do registrador de ponteiro de pilha (Stack Pointer) para a posição inicial de memória.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 12 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="12" data-correct="c">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 12</span>
+                    <span class="text-xs text-slate-400 font-medium">Linguagem de Programação de Baixo Nível</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um engenheiro de software de baixo nível analisa uma rotina em linguagem Assembly para a arquitetura AVR de um nó IoT responsável por ler portas digitais. Ele precisa garantir a manipulação direta e atômica de um único pino no registrador de saída <code>PORTB</code> sem alterar o estado lógico dos demais pinos da mesma porta de E/S.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Selecione a sequência correta de operação bitwise lógica que deve ser implementada no código para definir apenas o bit 3 da porta em nível lógico alto (\(1\)), mantendo intactos os demais bits.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q12" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Atribuição direta do valor hexadecimal <code>PORTB = 0x03;</code> ao registrador de saída.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q12" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Aplicação da operação lógica E bitwise (AND) com uma máscara de valor <code>PORTB = PORTB & (1 << 3);</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q12" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Aplicação da operação lógica OU bitwise (OR) com uma máscara de deslocamento de bit <code>PORTB = PORTB | (1 << 3);</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q12" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Aplicação da operação lógica OU Exclusivo bitwise (XOR) com uma máscara invertida <code>PORTB = PORTB ^ ~(1 << 3);</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q12" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Inversão lógica bitwise de todo o registrador seguida por um deslocamento à esquerda <code>PORTB = ~(PORTB) << 3;</code></span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 13 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="13" data-correct="a">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 13</span>
+                    <span class="text-xs text-slate-400 font-medium">Conectividade de Hardware</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Em um projeto de gateway IoT para monitoramento de vibração industrial, um projetista precisa integrar um acelerômetro digital de alta taxa de amostragem ao sistema processador. O barramento escolhido deve operar em modo full-duplex síncrono de alta velocidade, utilizando quatro linhas físicas de comunicação: relógio (SCLK), entrada de dados (MISO), saída de dados (MOSI) e seleção de dispositivo (CS).
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Indique o protocolo de interface de comunicação serial de hardware descrito para essa integração.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q13" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Interface Periférica Serial (SPI - Serial Peripheral Interface).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q13" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Circuito Inter-Integrado (I²C - Inter-Integrated Circuit).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q13" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Receptor/Transmissor Assíncrono Universal (UART).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q13" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Barramento de Rede de Área de Controle (CAN Bus).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q13" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Protocolo de Comunicação 1-Wire.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 14 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="14" data-correct="d">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 14</span>
+                    <span class="text-xs text-slate-400 font-medium">Fundamentos de Internet das Coisas</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Uma equipe de engenharia de software desenvolve a arquitetura de comunicação para uma rede LPWAN (<i>Low Power Wide Area Network</i>) utilizando a tecnologia LoRaWAN em uma fazenda inteligente de grande extensão. Os nós sensores operam a bateria e transmitem pequenos pacotes de dados telemetry em intervalos esporádicos para uma estação base central.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine a classe de dispositivo LoRaWAN que deve ser adotada para maximizar a autonomia de bateria dos nós sensores acionados por eventos.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q14" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Classe C, mantendo o receptor do nó continuamente energizado e aberto para comandos do servidor.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q14" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Classe B, sincronizando janelas de recepção periódicas através de beacons emitidos pela estação base.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q14" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Classe D, configurando a rede para modulação contínua FSK sem intervalos de repouso.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q14" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Classe A, abrindo duas janelas curtas de recepção downlink somente após cada transmissão uplink do nó.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q14" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Classe S, utilizando comunicação direta via satélite sem passar por gateways locais.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 15 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="15" data-correct="c">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 15</span>
+                    <span class="text-xs text-slate-400 font-medium">Configuração de Equipamentos de Redes</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um administrador de redes configura a tabela de roteamento estático e as diretivas de encaminhamento em um roteador gateway de borda que interliga uma sub-rede local de dispositivos IoT (endereçada na faixa <code>192.168.10.0/24</code>) à rede corporativa. A rede precisa garantir que o tráfego originado por esses dispositivos com endereços IPv4 privados possa alcançar servidores externos na nuvem de forma transparente.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Identifique o serviço de rede de camada de rede de computadores que deve ser habilitado e configurado no gateway para permitir esse tráfego de saída.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q15" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Protocolo de Resolução de Endereços (ARP - Address Resolution Protocol).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q15" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Sistema de Nomes de Domínio (DNS - Domain Name System) dinâmico.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q15" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Tradução de Endereços de Rede (NAT/PAT - Network Address Translation).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q15" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Protocolo de Controle de Mensagens da Internet (ICMP).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q15" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Protocolo de Configuração Dinâmica de Host (DHCP Relay Agent).</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 16 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="16" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 16</span>
+                    <span class="text-xs text-slate-400 font-medium">Conectividade de Software</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um desenvolvedor backend projeta o sistema de mensageria para uma frota de veículos conectados. O sistema utiliza o protocolo MQTT rodando sobre TCP/IP para enviar leituras periódicas de telemetria a um servidor broker centralizado. Devido às instabilidades constantes na conexão celular das estradas, o engenheiro precisa configurar o parâmetro de Qualidade de Serviço (QoS) na publicação de dados críticos de emergência para garantir que a mensagem seja entregue exatamente uma vez ao destinatário, evitando duplicatas e perdas.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Selecione o nível de Qualidade de Serviço (QoS) do protocolo MQTT apropriado para garantir a entrega exata de uma única cópia da mensagem.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q16" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) QoS nível 0 (At most once / No máximo uma vez).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q16" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) QoS nível 2 (Exactly once / Exatamente uma vez).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q16" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) QoS nível 1 (At least once / Pelo menos uma vez).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q16" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) QoS nível 3 (Guaranteed streaming / Fluxo garantido).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q16" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) QoS nível -1 (Unacknowledged push / Envio sem confirmação).</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 17 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="17" data-correct="e">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 17</span>
+                    <span class="text-xs text-slate-400 font-medium">Robótica</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Uma equipe de robótica industrial programa a junta de articulação de um braço robótico manipulador que utiliza um servomotor CC de alta precisão com encoder incremental acoplado. Para controlar com exatidão a posição angular da garra sob variações de carga mecânica, o software de controle executa em tempo real um algoritmo PID (Proporcional-Integrativo-Derivativo). Durante os testes, observa-se que a garra atinge a posição desejada com erro em regime permanente nulo, porém apresenta oscilações excessivas antes de estabilizar.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Indique o ajuste de parâmetro do ganho da malha PID que deve ser incrementado no software para amortecer as oscilações transientes e estabilizar a resposta do servomotor.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q17" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Aumento do Ganho Proporcional (\(K_p\)).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q17" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Aumento do Ganho Integrativo (\(K_i\)).</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q17" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Redução do tempo de amostragem do encoder para zero.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q17" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Eliminação do termo derivativo da equação do controlador.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q17" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Aumento do Ganho Derivativo (\(K_d\)).</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- MÓDULO III: PORTUGOL & LÓGICA DE PROGRAMAÇÃO -->
+            <div class="bg-indigo-900 text-white p-4 rounded-xl shadow-sm mt-8">
+                <h2 class="text-lg font-bold">Módulo III: Portugol & Lógica de Programação (Questões 18 a 25)</h2>
+            </div>
+
+            <!-- QUESTÃO 18 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="18" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 18</span>
+                    <span class="text-xs text-slate-400 font-medium">Estrutura Básica de um Programa</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Durante a auditoria de um algoritmo escrito em Portugol Studio para controle de fluxo de um caixa eletrônico, um analista de sistemas observa que o programa falha na compilação antes de iniciar a execução. O código fonte analisado possui a seguinte estrutura de escopo:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    inteiro saldo = 1000
+    
+    inicio()
+    {
+        escreva("Saldo atual: ", saldo)
+    }
+}
+</pre>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine a inconsistência estrutural presente no algoritmo que impede a compilação no padrão Portugol Studio.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q18" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Omissão da palavra-chave <code>var</code> antes da declaração da variável <code>saldo</code>.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q18" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Declaração da variável <code>saldo</code> fora do escopo da função <code>funcao inicio()</code> sem a palavra-chave de declaração de função.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q18" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Utilização de vírgula como operador de concatenação na instrução de saída de dados.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q18" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Presença de chaves delimitadoras para a estrutura principal do bloco <code>programa</code>.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q18" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Inicialização direta de valor em uma variável do tipo <code>inteiro</code> durante sua declaração.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 19 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="19" data-correct="c">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 19</span>
+                    <span class="text-xs text-slate-400 font-medium">Comandos de Entrada e Saída</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um programador desenvolve uma interface de linha de comando em Portugol para capturar os dados de cadastro de um funcionário. O programa precisa ler sequencialmente a idade (número inteiro) e o salário (número real). O trecho de código implementado é apresentado a seguir:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    funcao inicio()
+    {
+        inteiro idade
+        real salario
+        escreva("Digite a idade e o salario: ")
+        leia(idade, salario)
+        escreva("Idade: ", idade, " | Salario: R$ ", salario)
+    }
+}
+</pre>
+                    Durante os testes, o usuário digita o texto <code>"25"</code>, pressiona Enter, digita <code>"3500.50"</code> e pressiona Enter.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Indique a saída exata produzida no console após a execução completa do algoritmo.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q19" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) <code>Digite a idade e o salario: Idade: 25 | Salario: R$ 3500</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q19" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Ocorre um erro de execução pois a instrução <code>leia</code> não aceita múltiplas variáveis como argumento.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q19" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) <code>Digite a idade e o salario: Idade: 25 | Salario: R$ 3500.5</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q19" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) <code>Idade: 25 | Salario: R$ 3500.50</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q19" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) <code>Digite a idade e o salario: 25 3500.50</code></span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 20 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="20" data-correct="d">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 20</span>
+                    <span class="text-xs text-slate-400 font-medium">Variáveis e Tipos de Dados</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Em um módulo de processamento financeiro em Portugol, um desenvolvedor realiza operações aritméticas para calcular a média de transações de um cliente. O trecho de código sob análise é fornecido a seguir:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    funcao inicio()
+    {
+        inteiro a = 7
+        inteiro b = 2
+        real resultado
+        resultado = a / b
+        escreva("Resultado = ", resultado)
+    }
+}
+</pre>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine o valor impresso no console para a variável <code>resultado</code> ao término da execução do algoritmo.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q20" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) <code>Resultado = 3.5</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q20" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) <code>Resultado = 3.50</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q20" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) <code>Resultado = 1</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q20" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) <code>Resultado = 3.0</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q20" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Ocorre um erro de tipo incompatível durante a compilação na atribuição do valor.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 21 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="21" data-correct="a">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 21</span>
+                    <span class="text-xs text-slate-400 font-medium">Operadores Logicos e Aritmeticos</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um analista de validação de regras de negócio avalia uma expressão condicional composta em Portugol utilizada para conceder desconto promocional em um e-commerce. A lógica de desconto é armazenada em uma variável do tipo <code>logico</code> conforme a expressão matemática abaixo:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    funcao inicio()
+    {
+        inteiro idade = 20
+        real valorCompra = 150.0
+        logico possuiCupom = falso
+        logico resultado
+        
+        resultado = (idade > 18 e valorCompra >= 200.0) ou (nao possuiCupom e valorCompra > 100.0)
+        escreva(resultado)
+    }
+}
+</pre>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine o valor lógico impresso no console ao executar esta rotina.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q21" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) <code>verdadeiro</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q21" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) <code>falso</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q21" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) <code>1</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q21" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) <code>0</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q21" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Ocorre um erro de sintaxe devido ao uso do operador de negação <code>nao</code> sem parênteses.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 22 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="22" data-correct="c">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 22</span>
+                    <span class="text-xs text-slate-400 font-medium">Estruturas de Condição (Desvios Condicionais)</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Um programador analisa o fluxo de controle de um sistema de triagem médica em Portugol que categoriza o nível de urgência do atendimento com base na pontuação de sintomas obtida. O trecho de código implementado é mostrado abaixo:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    funcao inicio()
+    {
+        inteiro pontos = 15
+        
+        se (pontos > 20)
+        {
+            escreva("Emergencia")
+        }
+        senao se (pontos >= 10)
+        {
+            escreva("Urgente")
+        }
+        se (pontos > 12)
+        {
+            escreva(" - Prioritario")
+        }
+        senao
+        {
+            escreva("Pouco Urgente")
+        }
+    }
+}
+</pre>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine o texto exato que será impresso no console ao executar o algoritmo com <code>pontos = 15</code>.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q22" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) <code>Urgente</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q22" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) <code>Emergencia - Prioritario</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q22" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) <code>Urgente - Prioritario</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q22" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) <code>UrgentePouco Urgente</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q22" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) <code>Pouco Urgente</code></span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 23 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="23" data-correct="b">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 23</span>
+                    <span class="text-xs text-slate-400 font-medium">Estruturas de Repetição (Loops)</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Durante o desenvolvimento de um módulo de acumulação de valores em Portugol para um relatório de vendas, um programador implementa a seguinte estrutura de repetição baseada em laço condicional:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    funcao inicio()
+    {
+        inteiro soma = 0
+        inteiro i = 1
+        
+        faca
+        {
+            soma = soma + i
+            i = i + 2
+        } enquanto (i <= 5)
+        
+        escreva("Soma = ", soma, " | i = ", i)
+    }
+}
+</pre>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Indique o valor final impresso para as variáveis <code>soma</code> e <code>i</code> após o encerramento do laço.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q23" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) <code>Soma = 9 | i = 5</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q23" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) <code>Soma = 9 | i = 7</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q23" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) <code>Soma = 4 | i = 5</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q23" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) <code>Soma = 16 | i = 7</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q23" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) <code>Soma = 9 | i = 6</code></span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 24 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="24" data-correct="d">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 24</span>
+                    <span class="text-xs text-slate-400 font-medium">Vetores e Matrizes</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Em um sistema de processamento de imagens bidimensionais simplificadas em Portugol, um programador utiliza uma matriz de inteiros \(3 \times 3\) para armazenar níveis de cinza. Para processar a diagonal principal da imagem, ele executa a rotina abaixo:
+<pre class="bg-slate-800 text-slate-100 p-3 rounded-lg mt-2 overflow-x-auto text-xs font-mono">
+programa
+{
+    funcao inicio()
+    {
+        inteiro mat[3][3] = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        }
+        inteiro soma = 0
+        
+        para (inteiro i = 0; i < 3; i++)
+        {
+            soma = soma + mat[i][2 - i]
+        }
+        
+        escreva("Resultado = ", soma)
+    }
+}
+</pre>
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Determine o valor da variável <code>soma</code> impresso ao término do laço de repetição.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q24" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) <code>Resultado = 15</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q24" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) <code>Resultado = 12</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q24" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) <code>Resultado = 18</code></span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q24" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) <code>Resultado = 15</code> (soma da diagonal secundária)</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q24" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Ocorre um erro de acesso a índice fora dos limites da matriz (IndexOutOfBounds).</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- QUESTÃO 25 -->
+            <div class="question-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200" data-q="25" data-correct="a">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Questão 25</span>
+                    <span class="text-xs text-slate-400 font-medium">Planejamento de Problemas</span>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 text-sm leading-relaxed">
+                    <strong>Contexto:</strong> Uma equipe de desenvolvimento de software precisa planejar a solução algorítmica em Portugol para um sistema de controle de acesso de estacionamento. O sistema deve ler o horário de entrada e saída de veículos (em horas inteiras), calcular a permanência e aplicar a tarifa: R$ 10,00 para a primeira hora, R$ 5,00 por hora adicional até a 5ª hora, e valor fixo máximo de R$ 40,00 para permanências superiores a 5 horas. Durante a fase de planejamento e construção do pseudocódigo, a equipe analisa a sequência de passos lógicos para garantir que a cobrança seja efetuada sem sobreposição de regras.
+                </div>
+                <p class="font-medium text-slate-900 mb-4 text-base">
+                    <strong>Comando:</strong> Identifique a estratégia lógica correta de encadeamento de estruturas condicionais que resolve adequadamente a tarifação do estacionamento.
+                </p>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q25" value="a" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">a) Testar primeiro se <code>tempo > 5</code> para atribuir o teto de R$ 40,00; em seguida, testar com <code>senao se (tempo > 1)</code> calculando R$ 10,00 + (tempo - 1) * R$ 5,00; e, por fim, o caso de 1 hora no <code>senao</code>.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q25" value="b" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">b) Testar primeiro se <code>tempo >= 1</code> aplicando a fórmula R$ 10,00 + (tempo - 1) * R$ 5,00 em todas as situações, sem necessidade de limitar o valor teto.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q25" value="c" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">c) Calcular a tarifa multiplicando o tempo total diretamente por R$ 5,00 e adicionar R$ 10,00 fixos independente das horas e do teto limite.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q25" value="d" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">d) Executar um laço <code>para</code> de 1 até o tempo total adicionando R$ 5,00 em cada iteração, aplicando a taxa fixa inicial de R$ 10,00 após o término do laço.</span>
+                    </label>
+                    <label class="option-label flex items-start p-3 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                        <input type="radio" name="q25" value="e" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                        <span class="ml-3 text-sm">e) Utilizar uma estrutura <code>escolha-caso</code> chaveada diretamente pelo valor booleano da expressão <code>tempo > 5</code>.</span>
+                    </label>
+                </div>
+                <div class="feedback hidden mt-4 p-4 rounded-xl text-sm space-y-2 border"></div>
+            </div>
+
+            <!-- Submit Controls -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+                <button type="button" id="submit-btn" class="w-full sm:w-auto px-8 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg shadow-indigo-200 hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition-all">
+                    Finalizar e Corrigir Avaliação
+                </button>
+                <button type="button" id="reset-btn" class="w-full sm:w-auto px-6 py-3 bg-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-300 focus:outline-none transition-all">
+                    Reiniciar Formulário
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Score Modal / Summary Box -->
+        <div id="result-box" class="hidden bg-white p-6 rounded-2xl shadow-md border border-slate-200 text-center space-y-4">
+            <h2 class="text-2xl font-bold text-slate-900">Resultado da Avaliação</h2>
+            <div class="flex justify-center items-center space-x-6">
+                <div>
+                    <span id="score-display" class="text-4xl font-extrabold text-indigo-600">0 / 25</span>
+                    <p class="text-xs text-slate-500 mt-1 uppercase font-medium">Pontuação Final</p>
+                </div>
+                <div class="h-10 w-px bg-slate-200"></div>
+                <div>
+                    <span id="percent-display" class="text-4xl font-extrabold text-slate-800">0%</span>
+                    <p class="text-xs text-slate-500 mt-1 uppercase font-medium">Aproveitamento</p>
+                </div>
+            </div>
+            <p id="performance-message" class="text-sm font-medium text-slate-600"></p>
+        </div>
+
+    </div>
+
+    <!-- Script de Correção e Interatividade -->
+    <script>
+        const justifications = {
+            1: {
+                a: "O aluno multiplicou o número de espiras (150) pela amplitude do fluxo (0,02), esquecendo-se de derivar a função no tempo e multiplicar pela frequência angular (ω).",
+                b: "O aluno derivou o fluxo no tempo obtendo 6,28 V, mas somou com 100π em vez de multiplicar pelo número total de espiras (150).",
+                c: "O aluno considerou a frequência angular como apenas 100 rad/s em vez de 100π rad/s.",
+                d: "Correto! Aplicou a Lei de Faraday-Lenz: E = -N*(dΦ/dt). Amplitude máxima = 150 * 0,02 * 100π = 300π ≈ 942,48 V.",
+                e: "O aluno multiplicou a frequência de 60 Hz diretamente pelo número de espiras (150), ignorando a função temporal do fluxo."
+            },
+            2: {
+                a: "Correto! Aplicou a fórmula E = Q² / (2C) = (1,2×10⁻⁶)² / (2×100×10⁻⁹) = 7,20 µJ.",
+                b: "O aluno utilizou E = Q² / C, esquecendo de dividir o resultado pelo fator 2.",
+                c: "O aluno calculou a diferença de potencial V = Q/C = 12V e assumiu que a energia seria igual a esse valor numérico em mJ.",
+                d: "O aluno errou a conversão de submúltiplos no prefixo nano (10⁻⁹) para micro (10⁻⁶).",
+                e: "O aluno multiplicou carga por capacitância sem elevar a carga ao quadrado."
+            },
+            3: {
+                a: "O aluno confundiu o funcionamento do MOV com o comportamento de um fusível/disjuntor ao abrir o circuito.",
+                b: "Correto! O MOV é um resistor não linear cuja resistência cai abruptamente ao atingir a tensão de disparo, desviando o surto.",
+                c: "O aluno confundiu a atuação do varistor com a de um fusível térmico.",
+                d: "O aluno associou o componente à função de um capacitor.",
+                e: "O aluno confundiu a ação com a resposta indutiva de um choque ou indutor de proteção."
+            },
+            4: {
+                a: "O aluno soube da falta de tensão, mas associou incorretamente alta impedância a um amperímetro.",
+                b: "Correto! Conectar um voltímetro em série introduz uma baixíssima condução devido à sua impedância interna (10 MΩ), derrubando a corrente e alimentando insuficientemente o circuito.",
+                c: "Descreveu o comportamento em paralelo, porém o enunciado explicita que a conexão foi em série.",
+                d: "Supôs erroneamente injeção de tensão destrutiva reversa.",
+                e: "Supôs que o modo ohmímetro injetou corrente excessiva, embora o sintoma seja desligamento por limitação de corrente."
+            },
+            5: {
+                a: "O aluno cometeu um erro de arredondamento aritmético na divisão das resistências e multiplicação pelo sinal.",
+                b: "O aluno utilizou a fórmula da configuração inversora Av = -Rf/R1, ignorando o ganho unitário da entrada não inversora.",
+                c: "Correto! Ganho não inversor Av = 1 + (Rf/R1) = 1 + (47/3) = 16,667. Vout = 16,667 * 0,1V = 1,667V ≈ 1,67V.",
+                d: "O aluno esqueceu de converter os 100 mV para volts (0,1V).",
+                e: "O aluno aplicou o ganho correto (16,67), mas esqueceu de converter os 100 mV para 0,1V ao multiplicar."
+            },
+            6: {
+                a: "Correto! F = A'C(B' + B) + AB(C' + C) => F = A'C(1) + AB(1) => F = A'C + AB.",
+                b: "O aluno trocou as variáveis ao agrupar os mintermos.",
+                c: "O aluno errou a simplificação booleana no mapa/teorema de absorção.",
+                d: "O aluno omitiu a variável complementar no agrupamento do produto AB.",
+                e: "O aluno assumiu erroneamente que A'C + BC resulta em apenas C."
+            },
+            7: {
+                a: "O aluno calculou apenas as correntes dos módulos 1 e 2, omitindo o módulo 3.",
+                b: "O aluno considerou apenas a corrente do módulo 3.",
+                c: "O aluno somou o módulo 1 e o módulo 3, mas esqueceu o módulo 2.",
+                d: "Correto! I1 = 6W/12V = 0,5A; I2 = 12V/24Ω = 0,5A; I3 = 1,5A. Corrente Total = 0,5 + 0,5 + 1,5 = 3,0A.",
+                e: "O aluno dividiu resistência por tensão (24/12 = 2A) e tratou a potência de 6W como 3A."
+            },
+            8: {
+                a: "O aluno errou a ordem de grandeza da divisão (220/2200), encontrando 10 mA.",
+                b: "Correto! I = V / R = 220 / 2200 = 0,1 A = 100 mA. Essa magnitude na região torácica causa fibrilação ventricular.",
+                c: "O aluno multiplicou 220 por 2200 e errou o cálculo decimal.",
+                d: "O aluno dividiu a resistência pela tensão (2200/220 = 10).",
+                e: "O aluno assumiu um valor arbitrário de corrente sem aplicar a Lei de Ohm."
+            },
+            9: {
+                a: "O aluno apenas multiplicou a resistência pela distância (5 x 2 = 10).",
+                b: "O aluno utilizou ρ = π * a * R, esquecendo o fator 2.",
+                c: "Correto! Método de Wenner: ρ = 2 * π * a * R = 2 * π * 2 * 5 = 20π ≈ 62,83 Ω·m.",
+                d: "O aluno elevou a distância ao quadrado sem incluir π.",
+                e: "O aluno considerou a distância total do arranjo (6m) no cálculo de a."
+            },
+            10: {
+                a: "Correto! VR = VCC - VCE(sat) = 12 - 0,2 = 11,8V. P = (VR)² / R = (11,8)² / 1000 = 139,24 mW.",
+                b: "O aluno desconsiderou a tensão de saturação VCE(sat) e usou os 12V integrais.",
+                c: "O aluno calculou a potência dissipada sobre o transistor e não no resistor.",
+                d: "O aluno calculou a corrente (11,8 mA) mas anotou a unidade como mW.",
+                e: "O aluno fez uma aproximação inadequada no valor da tensão resistiva."
+            },
+            11: {
+                a: "O aluno confundiu a operação de salvamento com a limpeza da memória Flash, que apagaria o código de execução.",
+                b: "Correto! Microcontroladores ARM Cortex-M realizam o empilhamento automático (stacking) dos registradores essenciais na RAM para garantir retorno rápido do contexto.",
+                c: "O aluno supôs que a economia de energia desligaria barramentos de periféricos ativos necessários para o tratamento da interrupção.",
+                d: "O aluno confundiu a leitura do vetor de interrupção com a regravação dinâmica da tabela de vetores.",
+                e: "O aluno confundiu a utilização do ponteiro de pilha com sua reinicialização (reset), o que corromperá a execução do programa."
+            },
+            12: {
+                a: "O aluno pode ter escolhido essa alternativa pois realizou uma atribuição direta, o que força todos os outros 7 pinos para nível lógico baixo.",
+                b: "O aluno pode ter escolhido essa alternativa pois confundiu a operação OR com AND; o AND com máscara isolada limparia todos os outros bits para 0.",
+                c: "Correto! A operação bitwise OR com máscara (1 << 3) altera exclusivamente o bit 3 para 1 e preserva os estados anteriores de todos os demais bits.",
+                d: "O aluno pode ter escolhido essa alternativa pois tentou usar XOR, porém a máscara invertida inverteria todos os outros bits da porta.",
+                e: "O aluno pode ter escolhido essa alternativa pois aplicou operações lógicas globais em vez de criar uma máscara direcionada de bit."
+            },
+            13: {
+                a: "Correto! O barramento SPI utiliza quatro vias (SCLK, MISO, MOSI, CS) operando em modo full-duplex síncrono de alta velocidade.",
+                b: "O aluno pode ter escolhido essa alternativa pois o I²C é um barramento de periféricos síncrono popular, mas utiliza apenas 2 linhas físicas (SDA e SCL) e opera em half-duplex.",
+                c: "O aluno pode ter escolhido essa alternativa pois a UART é amplamente utilizada em eletrônica, porém é uma interface assíncrona que não utiliza linha de relógio (SCLK) nem seleção de chip (CS).",
+                d: "O aluno pode ter escolhido essa alternativa pois o CAN bus é um padrão industrial, mas utiliza sinalização diferencial em duas vias (CAN_H e CAN_L).",
+                e: "O aluno pode ter escolhido essa alternativa pois associou à integração de sensores, mas o 1-Wire utiliza apenas uma linha de dados com alimentação fantasma."
+            },
+            14: {
+                a: "O aluno pode ter escolhido essa alternativa pois a Classe C tem a menor latência, porém possui o maior consumo de energia por manter o rádio continuamente ligado.",
+                b: "O aluno pode ter escolhido essa alternativa pois a Classe B oferece equilíbrio com janelas temporizadas, porém ainda consome mais energia que a Classe A por acordar periodicamente.",
+                c: "O aluno pode ter escolhido essa alternativa pois inventou ou confundiu a classe LoRaWAN com modos de modulação contínua.",
+                d: "Correto! Dispositivos Classe A permanecem em sono profundo e acordam apenas quando acionados por eventos para transmitir (uplink), abrindo breves janelas de recepção em seguida, sendo a de menor consumo.",
+                e: "O aluno pode ter escolhido essa alternativa pois associou a siglas de comunicação remota, inexistindo como classe LoRaWAN padrão."
+            },
+            15: {
+                a: "O aluno pode ter escolhido essa alternativa pois o ARP resolve endereços IP para MAC dentro do segmento local de Camada 2, mas não roteia nem traduz IP privado para público.",
+                b: "O aluno pode ter escolhido essa alternativa pois o DNS resolve nomes de domínio em endereços IP, mas não altera os cabeçalhos de pacotes IP para saída na Internet.",
+                c: "Correto! O NAT/PAT traduz os endereços IP privados internos não roteáveis (como 192.168.10.0/24) em um endereço IP público válido para navegação externa.",
+                d: "O aluno pode ter escolhido essa alternativa pois o ICMP envia mensagens de controle e diagnóstico (ex: ping), não atuando na tradução ou roteamento de saída de dados.",
+                e: "O aluno pode ter escolhido essa alternativa pois o DHCP Relay retransmite solicitações de endereço IP, mas não atua no roteamento de pacotes para a nuvem."
+            },
+            16: {
+                a: "O aluno pode ter escolhido essa alternativa pois o QoS 0 é o mais leve, porém não oferece garantia de entrega e permite perda de pacotes sem confirmação.",
+                b: "Correto! O QoS 2 implementa um handshake de 4 vias (PUBLISH, PUBREC, PUBREL, PUBCOMP) garantindo a entrega do pacote exatamente uma vez, sem perda nem duplicação.",
+                c: "O aluno pode ter escolhido essa alternativa pois o QoS 1 garante a entrega, mas pode gerar mensagens duplicadas caso a confirmação (PUBACK) seja perdida na rede instável.",
+                d: "O aluno pode ter escolhido essa alternativa pois supôs a existência de uma classe superior, mas o MQTT define apenas os níveis de QoS 0, 1 e 2.",
+                e: "O aluno pode ter escolhido essa alternativa por confundir com especificações de extensões não padronizadas de envio sem confirmação."
+            },
+            17: {
+                a: "O aluno pode ter escolhido essa alternativa pois aumentar o Kp acelera a resposta, mas aumenta o sobressinal (overshoot) e agrava as oscilações transientes.",
+                b: "O aluno pode ter escolhido essa alternativa pois o ganho Ki elimina o erro em regime permanente, porém introduz atraso de fase e aumenta a instabilidade e o tempo de acomodação.",
+                c: "O aluno pode ter escolhido essa alternativa pois assumiu que zerar o tempo de amostragem no software corrigiria o controle, o que é fisicamente impossível.",
+                d: "O aluno pode ter escolhido essa alternativa pois achou que remover o termo derivativo simplificaria o sistema, mas isso eliminaria a ação de amortecimento.",
+                e: "Correto! A ação derivativa (Kd) atua na taxa de variação do erro, fornecendo um efeito amortecedor que reduz as oscilações e diminui o tempo de acomodação do sistema."
+            },
+            18: {
+                a: "O aluno pode ter escolhido essa alternativa pois confundiu a sintaxe de outras linguagens/variantes de Portugol (como o VisuAlg), porém no Portugol Studio a declaração exige apenas o tipo.",
+                b: "Correto! No Portugol Studio, todas as instruções executáveis e declarações de variáveis globais devem estar contidas dentro de funções (ex: funcao inicio()), ou especificadas com a palavra-chave 'funcao'.",
+                c: "O aluno pode ter escolhido essa alternativa por achar que a concatenação exigiria o operador '+', ignorando que a vírgula é válida no Portugol Studio.",
+                d: "O aluno pode ter escolhido essa alternativa por supor que o bloco programa não utiliza chaves.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que a inicialização de variáveis é proibida na declaração."
+            },
+            19: {
+                a: "O aluno pode ter escolhido essa alternativa por achar que a conversão de tipo omitiria a parte decimal do número real.",
+                b: "O aluno pode ter escolhido essa alternativa por acreditar que o comando leia() aceita apenas uma variável por vez.",
+                c: "Correto! O comando leia() lê em sequência e o escreva() concatena a mensagem impressa. No Portugol Studio, a exibição padrão de números reais omite zeros não significativos no final.",
+                d: "O aluno pode ter escolhido essa alternativa por achar que a mensagem inicial de solicitação não seria exibida no console.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que o escreva final apenas repetiria os dados sem formatar o texto fixo."
+            },
+            20: {
+                a: "O aluno pode ter escolhido essa alternativa por assumir que a divisão '7 / 2' resulta diretamente no valor real 3.5.",
+                b: "O aluno pode ter escolhido essa alternativa por assumir a conversão automática para número com duas casas decimais.",
+                c: "O aluno pode ter escolhido essa alternativa por confundir o operador de divisão '/' com o operador de resto da divisão '%'.",
+                d: "Correto! A divisão entre dois inteiros (7 / 2) em Portugol gera um resultado inteiro truncado (3). Ao atribuir esse valor inteiro à variável real 'resultado', ocorre a conversão implícita para 3.0.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que Portugol proíbe a atribuição de valores inteiros a variáveis do tipo real."
+            },
+            21: {
+                a: "Correto! A primeira parte (20 > 18 e 150.0 >= 200.0) é (V e F) = F. A segunda parte (nao falso e 150.0 > 100.0) é (V e V) = V. O resultado final F ou V resulta em 'verdadeiro'.",
+                b: "O aluno pode ter escolhido essa alternativa por errar a ordem de precedência lógica dos operadores 'e' e 'ou'.",
+                c: "O aluno pode ter escolhido essa alternativa por achar que o resultado numérico '1' seria impresso no lugar do tipo booleano.",
+                d: "O aluno pode ter escolhido essa alternativa por assumir que o resultado booleano falso seria convertido para '0'.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que o operador de negação 'nao' exige obrigatoriamente uso de parênteses."
+            },
+            22: {
+                a: "O aluno pode ter escolhido essa alternativa por achar que o segundo bloco 'se' estaria aninhado no 'senao se'.",
+                b: "O aluno pode ter escolhido essa alternativa por achar que o primeiro teste (pontos > 20) seria satisfeito.",
+                c: "Correto! O primeiro bloco 'se (pontos > 20)' é falso. O 'senao se (pontos >= 10)' é verdadeiro e imprime 'Urgente'. Em seguida, um NOVO bloco independente 'se (pontos > 12)' é avaliado; como 15 > 12 é verdadeiro, imprime ' - Prioritario'.",
+                d: "O aluno pode ter escolhido essa alternativa por achar que o 'senao' estaria vinculado ao primeiro 'se' em vez do segundo.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que apenas o bloco 'senao' final seria executado."
+            },
+            23: {
+                a: "O aluno pode ter escolhido essa alternativa por assumir que a variável 'i' mantém o valor do último teste positivo (5) sem sofrer o incremento final dentro do laço.",
+                b: "Correto! O laço executa 3 vezes: 1ª (soma=1, i=3), 2ª (soma=4, i=5), 3ª (soma=9, i=7). Como 7 <= 5 é falso, o laço encerra exibindo soma=9 e i=7.",
+                c: "O aluno pode ter escolhido essa alternativa por errar a contagem de iterações e achar que o laço pararia na 2ª execução.",
+                d: "O aluno pode ter escolhido essa alternativa por realizar uma iteração adicional indevida.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que o passo de incremento era de 1 em 1 em vez de 2 em 2."
+            },
+            24: {
+                a: "O aluno pode ter escolhido essa alternativa por calcular a diagonal principal (1 + 5 + 9 = 15), mas ignorar a expressão '2 - i'.",
+                b: "O aluno pode ter escolhido essa alternativa por cometer erro aritmético nos índices da matriz.",
+                c: "O aluno pode ter escolhido essa alternativa por somar os elementos da última linha da matriz.",
+                d: "Correto! Para i=0: mat[0][2]=3. Para i=1: mat[1][1]=5. Para i=2: mat[2][0]=7. A soma dos elementos da diagonal secundária é 3 + 5 + 7 = 15.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que o índice '2 - i' ultrapassaria os limites da matriz."
+            },
+            25: {
+                a: "Correto! A boa prática de planejamento exige testar primeiro a condição de maior restrição/teto (tempo > 5) para aplicar R$ 40,00; em seguida tratar a faixa intermediária e por fim a tarifa base.",
+                b: "O aluno pode ter escolhido essa alternativa por ignorar a regra de valor limite teto do problema.",
+                c: "O aluno pode ter escolhido essa alternativa por propor uma fórmula linear incorreta que desrespeita a especificação da 1ª hora diferenciada.",
+                d: "O aluno pode ter escolhido essa alternativa por sugerir um laço desnecessário que acarreta em cobrança duplicada da primeira hora.",
+                e: "O aluno pode ter escolhido essa alternativa por achar que a estrutura 'escolha-caso' aceita expressões booleanas condicionais no chaveamento em Portugol."
+            }
+        };
+
+        document.getElementById('submit-btn').addEventListener('click', () => {
+            let score = 0;
+            const total = 25;
+            const cards = document.querySelectorAll('.question-card');
+
+            cards.forEach(card => {
+                const qNum = card.getAttribute('data-q');
+                const correct = card.getAttribute('data-correct');
+                const selected = card.querySelector(`input[name="q${qNum}"]:checked`);
+                const feedbackBox = card.querySelector('.feedback');
+
+                feedbackBox.classList.remove('hidden', 'bg-emerald-50', 'border-emerald-200', 'text-emerald-900', 'bg-rose-50', 'border-rose-200', 'text-rose-900', 'bg-amber-50', 'border-amber-200', 'text-amber-900');
+
+                if (selected) {
+                    const val = selected.value;
+                    const justificationText = justifications[qNum][val];
+
+                    if (val === correct) {
+                        score++;
+                        feedbackBox.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-900');
+                        feedbackBox.innerHTML = `<strong>Resposta Correta!</strong><br>${justificationText}`;
+                    } else {
+                        feedbackBox.classList.add('bg-rose-50', 'border-rose-200', 'text-rose-900');
+                        feedbackBox.innerHTML = `<strong>Resposta Incorreta (Sua escolha: ${val.toUpperCase()}).</strong><br><em>Análise da escolha:</em> ${justificationText}<br><span class="mt-1 block text-emerald-700 font-semibold">Gabarito Correto: Alternativa ${correct.toUpperCase()}</span>`;
+                    }
+                } else {
+                    feedbackBox.classList.add('bg-amber-50', 'border-amber-200', 'text-amber-900');
+                    feedbackBox.innerHTML = `<strong>Questão não respondida.</strong><br><span class="text-indigo-700 font-semibold">Gabarito Correto: Alternativa ${correct.toUpperCase()}</span>`;
+                }
+
+                feedbackBox.classList.remove('hidden');
+            });
+
+            // MathJax re-render for dynamically displayed Math inside feedback
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+
+            // Display Score
+            const percentage = Math.round((score / total) * 100);
+            document.getElementById('score-display').textContent = `${score} / ${total}`;
+            document.getElementById('percent-display').textContent = `${percentage}%`;
+
+            const msg = document.getElementById('performance-message');
+            if (percentage >= 80) {
+                msg.textContent = "Excelente desempenho! Domínio elevado em Eletroeletrônica, Internet das Coisas e Lógica de Programação.";
+                msg.className = "text-sm font-semibold text-emerald-600";
+            } else if (percentage >= 50) {
+                msg.textContent = "Bom desempenho. Recomenda-se revisar as questões incorretas para consolidar a base teórica e prática.";
+                msg.className = "text-sm font-semibold text-amber-600";
+            } else {
+                msg.textContent = "Atenção: Necessário reforçar os estudos em análise de circuitos, redes de computadores e algoritmos.";
+                msg.className = "text-sm font-semibold text-rose-600";
+            }
+
+            const resultBox = document.getElementById('result-box');
+            resultBox.classList.remove('hidden');
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('reset-btn').addEventListener('click', () => {
+            document.getElementById('quiz-form').reset();
+            const feedbacks = document.querySelectorAll('.feedback');
+            feedbacks.forEach(f => f.classList.add('hidden'));
+            document.getElementById('result-box').classList.add('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <footer class="mt-12 text-center text-sm text-slate-500">
+        &copy; 2026 - Questões SAEP de Eletroeletrônica, IoT e Lógica de Programação. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
